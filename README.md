@@ -20,10 +20,10 @@ This portfolio includes the following features:
 ## Project Structure
 
 ``` 
-├── index.html       # The main landing page
-├── styles.css       # Custom CSS for styling the website
 ├── assets/          # All project images
-└── README.md        # Project description and documentation
+├── README.md        # Project description and documentation
+├── index.html       # The main landing page
+└── styles.css       # Custom CSS for styling the website
 ```
 
 ## Local Setup
