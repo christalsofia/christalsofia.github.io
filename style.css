@@ -33,10 +33,6 @@ body {
   width: 3rem;
 }
 
-.nav-tools {
-  position: relative; /* Ensure the nav-tools is the positioned ancestor */
-}
-
 .nav-tools a {
   text-decoration: none;
   color: black;
@@ -100,7 +96,6 @@ body {
   right: 0px;
   margin: 0;
   z-index: -1;
-  width: 40%;
   visibility: hidden;
 }
 
