@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* blue: #195d75
+   yellow: #fdc435*/
+
+* {
+  font-family: 'Poppins';
+  margin: 0px;
+}
+
+html {
+  min-width: 600px;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 1rem 5rem;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0px;
+  position: relative;
+}
+
+.logo img {
+  width: 3rem;
+}
+
+.nav-tools {
+  position: relative; /* Ensure the nav-tools is the positioned ancestor */
+}
+
+.nav-tools a {
+  text-decoration: none;
+  color: black;
+  margin-left: 32px;
+}
+
+.nav-tools a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+/* Introduction */
+
+.left-side, .right-side {
+  flex: 0;
+}
+
+.left-side {
+  margin: 1rem 0px;
+}
+
+.title {
+  font-weight: 700;
+  color: #fdc435;
+  margin: 1rem 0px;
+}
+
+.name {
+  font-family: 'Playfair Display';
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 1rem 0px;
+}
+
+.information {
+  margin: 1rem 0px;
+}
+
+.resume {
+  padding: 0.5rem 1rem;
+  background-color: #fdc435;
+  border-radius: 10px;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  border-width: 2px;
+  border-color: #fdc435;
+  border-style: solid;
+  transition-duration: 200ms;
+}
+
+.resume:hover {
+  border-color: black;
+  background-color: white;
+  transition-duration: 200ms;
+}
+
+.right-side img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 0;
+  z-index: -1;
+  width: 40%;
+  visibility: hidden;
+}
+
+/* Projects List */
+
+.div-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin: 5rem 0px 0px 0px;
+  text-align: center;
+  font-family: 'Playfair Display';
+}
+
+.custom-line {
+  height: 3px;
+  width: 5rem;
+  background-color: #fdc435;
+  margin: 1rem auto 5rem auto;
+}
+
+.project-list {
+  padding: 0 5rem;
+}
+
+.project {
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0px;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 
+    -4px 0 8px rgba(0, 0, 0, 0.1),
+    0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-information, .project-image {
+  flex: 0;
+}
+
+.project-information {
+  padding: 2rem;
+}
+
+.project-name {
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 1rem 0px;
+  font-family: 'Playfair Display';
+}
+
+.project-description {
+  margin: 1rem 0px;
+}
+
+.project-link {
+  margin: 1rem 0px;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border-radius: 2rem;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  transition-duration: 200ms;
+}
+
+.project-link:hover {
+  border-color: #fdc435;
+  background-color: #fdc435;
+  transition-duration: 200ms;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+/* Contact Me */
+
+form {
+  width: 40%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-weight: 500;
+}
+
+form input[type="text"], form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+  margin: 0.5rem 0 1rem 0;
+  border-radius: 10px;
+  padding: 0.5rem;
+  border: 1px solid black;
+}
+
+form input[type="submit"] {
+  padding: 0.5rem 1rem;
+  background-color: #fdc435;
+  border-radius: 10px;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  border-width: 2px;
+  border-color: #fdc435;
+  border-style: solid;
+  transition-duration: 200ms;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover { 
+  border-color: black;
+  background-color: white;
+  transition-duration: 200ms;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+.footer-icon {
+  width: 3rem;
+  height: 3rem;
+  transition-duration: 200ms;
+}
+
+.footer-icon:hover {
+  fill: #fdc435;
+  transition-duration: 200ms;
+}
+
+.copyright {
+  margin: 1rem;
+  text-align: center;
+}
+
+/* Medium Screen Up */
+
+@media (min-width: 900px) {
+  .introduction {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left-side, .right-side {
+    flex: 1;
+  }
+
+  .right-side img {
+    visibility: visible;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .project-information, .project-image {
+    flex: 1;
+  }
+
+  .project-image img {
+    display: block;
+  }
+}
