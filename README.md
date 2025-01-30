@@ -6,13 +6,13 @@ A simple portfolio project was created as part of the **WEB DEVELOPMENT 101: HTM
 
 ## Local Setup
 
-1. Clone the repository from GitHub 
+1. Clone the repository from GitHub:
 
     ```
     git clone https://github.com/christalsofia/christalsofia.github.io.git
     ```
 
-2. Using the terminal, navigate to the folder
+2. Using the terminal, navigate to the folder:
 
    ```
    cd christalsofia.github.io
